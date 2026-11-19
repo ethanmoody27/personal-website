@@ -5,92 +5,187 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Ethan Moody</title>
   <meta name="description" content="Ethan Moody — Product & Business Operations at Bloomfield Robotics, USMC veteran, and founder of Steroid Skateboards. Based in Pittsburgh.">
+  <meta name="theme-color" content="#ffffff">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="site-header">
-    <a class="logo" href="#top">EM</a>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#work">Work</a>
-      <a href="#path">Path</a>
-      <a href="#contact">Contact</a>
-    </nav>
+  <header class="nav" id="nav">
+    <div class="nav-inner">
+      <a class="brand" href="#top" aria-label="Ethan Moody, home">
+        <span class="brand-mark">EM</span>
+        <span class="brand-name">Ethan Moody</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#now">Now</a>
+        <a href="#about">About</a>
+        <a href="#path">Path</a>
+      </nav>
+      <a class="btn btn-dark btn-sm" href="#contact">Get in touch</a>
+    </div>
   </header>
 
   <main id="top">
+    <!-- Hero -->
     <section class="hero">
-      <p class="eyebrow">Hi, I'm</p>
-      <h1>Ethan Moody</h1>
-      <p class="tagline">Product &amp; business operations in robotics. Marine Corps veteran. Skateboard founder.</p>
-      <p class="location">Pittsburgh, PA</p>
-      <div class="cta">
-        <a class="btn primary" href="#work">What I'm working on</a>
-        <a class="btn" href="#contact">Get in touch</a>
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="container hero-inner">
+        <a class="status reveal" href="#now">
+          <span class="dot"></span>
+          Product &amp; Ops at Bloomfield Robotics
+          <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <h1 class="reveal">I turn messy, real-world problems into products that <span class="grad">actually work.</span></h1>
+        <p class="lede reveal">I'm Ethan, an operator at the intersection of product, business, and technology. Marine Corps veteran, Carnegie Mellon product manager, and founder of a skateboard company. Based in Pittsburgh.</p>
+        <div class="hero-cta reveal">
+          <a class="btn btn-dark" href="#now">See what I'm building</a>
+          <a class="btn btn-ghost" href="https://www.linkedin.com/in/ethanmoody/" target="_blank" rel="noopener">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+            LinkedIn
+          </a>
+        </div>
+
+        <dl class="facts reveal">
+          <div><dt>Now</dt><dd>Bloomfield Robotics</dd></div>
+          <div><dt>Served</dt><dd>USMC Infantry Officer</dd></div>
+          <div><dt>Studied</dt><dd>CMU Tepper · Penn State</dd></div>
+          <div><dt>Building</dt><dd>Steroid Skateboards</dd></div>
+        </dl>
       </div>
     </section>
 
-    <section id="about">
-      <h2>About</h2>
-      <p>My path runs from studying finance and marketing at Penn State to serving as a Marine Corps Infantry Officer, learning full-stack development at Fullstack Academy, earning an M.S. in Product Management at Carnegie Mellon, and working as a product manager at two early-stage fintech startups. That mix put me at the intersection of business, leadership, operations, and technology.</p>
-      <p>Today I work in Product Operations and Business Operations at Bloomfield Robotics. My focus is simple: deeply understand the customer's world, find their real problems, and help the team deliver solutions that actually matter.</p>
-      <p>Outside of work, my world revolves around my family and skateboarding.</p>
-      <ul class="tags skills">
-        <li>Leadership</li><li>Product Management</li><li>Operations Management</li><li>User Experience</li><li>Data Analysis</li>
-      </ul>
-    </section>
+    <!-- Now -->
+    <section id="now" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="label">01 — Now</p>
+          <h2>What I'm working on</h2>
+        </div>
 
-    <section id="work">
-      <h2>What I'm working on</h2>
-      <div class="grid">
-        <article class="card">
-          <p class="kicker">Day job</p>
-          <h3>Bloomfield Robotics</h3>
-          <p>Product &amp; Business Operations for AI-powered agricultural robotics. I work across product, business development, engineering, and field operations (from the office in Pittsburgh to the rows in Peru) to turn grower insights into clear priorities.</p>
-          <ul class="tags"><li>Robotics</li><li>AI</li><li>AgTech</li></ul>
-        </article>
-        <article class="card">
-          <p class="kicker">Founder &amp; Owner</p>
-          <h3>Steroid Skateboards</h3>
-          <p>Performance Enhanced Decks. Made in America by PennsWood Manufacturing in Oil City, PA, with original artwork by local artist Josh Duff. Twin tip and classic popsicle shapes, plus a skate team in the works.</p>
-          <ul class="tags"><li>Startup</li><li>Skateboarding</li></ul>
-        </article>
-        <article class="card">
-          <p class="kicker">Team Manager</p>
-          <h3>LYVZ Energy</h3>
-          <p>Building out LYVZ's skateboarding team on evenings and weekends: managing riders, setting up events, and working with local shops.</p>
-          <ul class="tags"><li>Community</li><li>Skateboarding</li></ul>
-        </article>
+        <div class="bento">
+          <article class="tile tile-feature reveal">
+            <div class="tile-top">
+              <span class="chip">Day job</span>
+              <span class="icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="7" width="16" height="11" rx="3"/><path d="M12 3v4M9 12h.01M15 12h.01M2 12v2M22 12v2"/></svg>
+              </span>
+            </div>
+            <h3>Bloomfield Robotics</h3>
+            <p class="role">Product &amp; Business Operations</p>
+            <p>AI and robotics that help growers see every plant in their fields. I work across product, business development, engineering, and field operations, from our Pittsburgh HQ to the rows in Peru, turning what growers actually need into clear priorities and shipped outcomes.</p>
+            <ul class="tags"><li>Robotics</li><li>AI</li><li>AgTech</li><li>Field Ops</li></ul>
+          </article>
+
+          <article class="tile reveal">
+            <div class="tile-top">
+              <span class="chip">Founder &amp; Owner</span>
+              <span class="icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="9" width="20" height="6" rx="3"/><circle cx="7" cy="18" r="1.5"/><circle cx="17" cy="18" r="1.5"/></svg>
+              </span>
+            </div>
+            <h3>Steroid Skateboards</h3>
+            <p class="role">Performance Enhanced Decks</p>
+            <p>American-made decks pressed by PennsWood Manufacturing in Oil City, PA, with original art by local artist Josh Duff. Twin tip and popsicle shapes, with a team in the works.</p>
+          </article>
+
+          <article class="tile reveal">
+            <div class="tile-top">
+              <span class="chip">Team Manager</span>
+              <span class="icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L4 14h7l-1 8 9-12h-7l1-8z"/></svg>
+              </span>
+            </div>
+            <h3>LYVZ Energy</h3>
+            <p class="role">Skate team</p>
+            <p>Building out the LYVZ skateboarding team on nights and weekends: riders, events, and local shop partnerships.</p>
+          </article>
+        </div>
       </div>
     </section>
 
-    <section id="path">
-      <h2>Path</h2>
-      <ol class="timeline">
-        <li><strong>Bloomfield Robotics</strong><span>Product &amp; Business Operations</span></li>
-        <li><strong>Two early-stage fintech startups</strong><span>Product Manager</span></li>
-        <li><strong>Carnegie Mellon University, Tepper School of Business</strong><span>M.S. Product Management</span></li>
-        <li><strong>Fullstack Academy</strong><span>Full-stack software development</span></li>
-        <li><strong>United States Marine Corps</strong><span>Infantry Officer</span></li>
-        <li><strong>Penn State University</strong><span>Finance &amp; Marketing</span></li>
-      </ol>
+    <!-- About -->
+    <section id="about" class="section section-alt">
+      <div class="container split">
+        <div class="section-head reveal">
+          <p class="label">02 — About</p>
+          <h2>Business, leadership, and technology, in one path.</h2>
+        </div>
+        <div class="prose reveal">
+          <p>I started out studying finance and marketing at Penn State, then led Marines as an Infantry Officer. After the Corps I learned full-stack development at Fullstack Academy, earned an M.S. in Product Management at Carnegie Mellon, and worked as a product manager at two early-stage fintech startups.</p>
+          <p>That mix is how I work today: get deep into the customer's world, find the problem that actually matters, and get a cross-functional team aligned and moving on it.</p>
+          <p>Outside of work, my world revolves around my family and skateboarding.</p>
+          <ul class="skills">
+            <li>Product Management</li><li>Operations</li><li>Leadership</li><li>UX</li><li>Data Analysis</li><li>Full-stack Dev</li>
+          </ul>
+        </div>
+      </div>
     </section>
 
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>If you're into robotics, AI, product, operations, startups, or skateboarding, I'm always open to connecting.</p>
-      <div class="links">
-        <a href="https://www.linkedin.com/in/ethanmoody/">LinkedIn</a>
-        <a href="https://github.com/ethanmoody27">GitHub</a>
+    <!-- Path -->
+    <section id="path" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="label">03 — Path</p>
+          <h2>How I got here</h2>
+        </div>
+        <ol class="path">
+          <li class="reveal"><span class="kind">Work</span><div><strong>Bloomfield Robotics</strong><span>Product &amp; Business Operations</span></div><span class="now-pill">Current</span></li>
+          <li class="reveal"><span class="kind">Work</span><div><strong>Two early-stage fintech startups</strong><span>Product Manager</span></div></li>
+          <li class="reveal"><span class="kind">Education</span><div><strong>Carnegie Mellon University, Tepper School of Business</strong><span>M.S. Product Management</span></div></li>
+          <li class="reveal"><span class="kind">Education</span><div><strong>Fullstack Academy</strong><span>Full-stack software development</span></div></li>
+          <li class="reveal"><span class="kind">Service</span><div><strong>United States Marine Corps</strong><span>Infantry Officer</span></div></li>
+          <li class="reveal"><span class="kind">Education</span><div><strong>Penn State University</strong><span>Finance &amp; Marketing</span></div></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="cta-card reveal">
+          <div class="cta-glow" aria-hidden="true"></div>
+          <p class="label label-light">04 — Contact</p>
+          <h2>Let's talk.</h2>
+          <p>Robotics, AI, product, operations, startups, or skateboarding: I'm always open to connecting.</p>
+          <div class="hero-cta">
+            <a class="btn btn-light" href="https://www.linkedin.com/in/ethanmoody/" target="_blank" rel="noopener">Message me on LinkedIn</a>
+            <a class="btn btn-outline-light" href="https://github.com/ethanmoody27" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </div>
       </div>
     </section>
   </main>
 
-  <footer>
-    <p>© <span id="year"></span> Ethan Moody</p>
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span>© <span id="year"></span> Ethan Moody</span>
+      <span>Pittsburgh, PA</span>
+    </div>
   </footer>
 
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Nav border on scroll
+    const nav = document.getElementById('nav');
+    const onScroll = () => nav.classList.toggle('scrolled', window.scrollY > 8);
+    onScroll();
+    window.addEventListener('scroll', onScroll, { passive: true });
+
+    // Reveal on scroll
+    const els = document.querySelectorAll('.reveal');
+    if ('IntersectionObserver' in window && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      document.documentElement.classList.add('js-reveal');
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach((e) => {
+          if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+        });
+      }, { rootMargin: '0px 0px -8% 0px' });
+      els.forEach((el) => io.observe(el));
+    }
+  </script>
 </body>
 </html>
